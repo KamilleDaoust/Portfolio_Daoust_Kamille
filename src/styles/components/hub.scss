@@ -39,34 +39,10 @@
                 justify-content: center;
                 align-items: center;
                 gap: 14px;
-
-                .big {
-                    font-size: var(--font-size-h1-big);
-                }
-
-                h1 {
-                    color: var(--color-black);
-                    font-size: var(--font-size-h1);
-                    font-family: var(--font-primary);
-                    font-weight: 700;
-                }
-
-                h4 {
-                    color: var(--color-black);
-                    font-family: var(--font-secondary);
-                    font-size: var(--font-size-h4);
-                    font-weight: 600;
-                }
             }
 
             .subtitle {
                 text-align: center;
-                h2 {
-                    font-family: var(--font-secondary);
-                    font-size: var(--font-size-h2);
-                    font-weight: 700;
-                    color: var(--color-black);
-                }
             }
             .nav-hub {
                 display: flex;
@@ -74,46 +50,21 @@
                 justify-content: center;
                 align-items: center;
                 gap: 32px;
-
-                .buttons {
-                    ul {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 32px;
-
-                        a {
-                            text-align: center;
-                            background-color: var(--color-primary);
-                            padding: 10px 20px;
-                            border-radius: 16px;
-                            width: 100%;
-                            list-style-type: none;
-                            color: var(--color-white);
-                            font-family: var(--font-text);
-                            font-size: var(--font-size-links);
-                            &:hover {
-                                background-color: var(--color-bg-primary);
-                            }
-                        }
-                    }
-                }
             }
         }
     }
-    .media {
-        background-color: var(--color-primary);
+}
+//Photo de moi en évidence
+.media {
+    background-color: var(--color-primary);
 
-        img {
-            display: block;
-            height: 100vh;
-            width: 100%;
-            object-fit: cover;
-        }
+    img {
+        display: block;
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
     }
 }
-
 //Menu d'icônes
 .socials {
     ul {
@@ -149,6 +100,67 @@
             .icon {
                 fill: none;
                 stroke: var(--color-black);
+            }
+        }
+    }
+}
+
+//Titres
+.big {
+    font-size: var(--font-size-h1-big);
+}
+
+h1 {
+    color: var(--color-black);
+    font-size: var(--font-size-h1);
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+h2 {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+h3 {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+}
+
+h4 {
+    color: var(--color-black);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-h4);
+    font-weight: 600;
+}
+
+//Nav hub + hero
+.buttons {
+    width: 50%;
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        padding: 0;
+        margin: 0;
+
+        a {
+            text-align: center;
+            background-color: var(--color-primary);
+            padding: 10px 20px;
+            border-radius: 16px;
+            width: 100%;
+            list-style-type: none;
+            color: var(--color-white);
+            font-family: var(--font-text);
+            font-size: var(--font-size-links);
+            &:hover {
+                background-color: var(--color-bg-primary);
             }
         }
     }
