@@ -1,0 +1,87 @@
+.footer {
+    background-color: var(--color-white);
+    padding: 60px 120px;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+
+        .foot-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        .action {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+
+            a.IA {
+                background-color: var(--color-primary);
+                padding: 10px 20px;
+                border-radius: 16px;
+            }
+
+            .icones {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+                color: var(--color-black);
+                .infos,
+                .sociaux {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 18px;
+                }
+            }
+        }
+        .socials {
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    list-style-type: none;
+                    aspect-ratio: 1/1;
+                }
+                a {
+                    background-color: var(--color-primary);
+                    padding: 16px;
+                    border-radius: 100px;
+                    width: 100%;
+                    height: 100%;
+                    aspect-ratio: 1/1;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                        background-color: var(--color-bg-primary);
+                    }
+
+                    .icon {
+                        fill: none;
+                        stroke: var(--color-white);
+                    }
+                }
+            }
+        }
+    }
+}
